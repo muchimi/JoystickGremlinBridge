@@ -56,6 +56,7 @@ void CALLBACK HandleSimconnectMessage(SIMCONNECT_RECV* pData, DWORD cbData, void
         std::strcpy(response->data, "#pong#");
         SimConnect_SetClientData(simconnect, gremlinex::kPublicDownlinkArea, gremlinex::kPacketDefinition, 0, 0,
                                sizeof(gremlinex::Packet), response);
+        break;
       
     }
 
